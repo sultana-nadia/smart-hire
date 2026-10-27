@@ -1,0 +1,39 @@
+{
+  "name": "smarthire",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"node --watch server/start.js\"",
+    "build": "vite build",
+    "start": "node server/start.js",
+    "preview": "vite preview",
+    "server": "node server/start.js",
+    "test:e2e": "playwright test",
+    "test:e2e:production": "playwright test --config=playwright.production.config.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "concurrently": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "latest",
+    "mammoth": "latest",
+    "mongoose": "^8.19.1",
+    "multer": "latest",
+    "pdf-parse": "^1.1.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "vite": "6.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
